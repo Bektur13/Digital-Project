@@ -1,0 +1,77 @@
+.projects {
+    margin-top: 100px;
+    &__box {
+	    display: flex;
+	    margin-bottom: 50px;
+    }
+    &__title {
+        font-family: "TT Hoves";
+	    @include font(40px,300);
+        color: $color-gray;
+    }
+    &__description {
+        margin: 20px 0 60px 0;
+    }
+    img {
+        width: 600px;
+    }
+    .wrapper {
+        margin-top: 50px;
+        overflow: hidden;
+    }
+    .slick-slide {
+        outline: none;
+    }
+    .slick-track {
+        width: 800px;
+        display: flex;
+    }
+    .slick-prev.slick-arrow {
+        position: absolute;
+        top: 1310px;
+        left: 200px;
+        height: 50px;
+        width: 50px;
+        font-size: 0;
+        z-index: 1;
+        background-color: $color-white;
+        outline: none;
+        border: 1px solid $color-gray;
+    }
+    .slick-prev.slick-arrow::before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 17px;
+        height: 8px;
+        background: url("../images/arrow.svg");
+    }
+    .slick-next.slick-arrow {
+        position: absolute;
+        top: 1310px;
+        left: 280px;
+        height: 50px;
+        width: 50px;
+        font-size: 0;
+        z-index: 1;
+        background-color: #ffffff;
+        outline: none;
+        border: 1px solid #bdbdbd;
+    }
+    .slick-next.slick-arrow::before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(180deg);
+        width: 17px;
+        height: 8px;
+        background: url("../images/arrow.svg");
+    }
+    .slick-next.slick-arrow,
+    .slick-prev.slick-arrow:hover {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,34 @@
+@import "./fonts/TTHoves";
+@import "./mixins";
+@import "./variables";
+@import "./base";
+
+// Components
+@import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import './components/tasks';
+@import "./components/projects";
+@import "./components/contacts";
+@import "./components/footer";
+
+// Gallery
+@import "./gallery/index.scss";
+
+// Projects
+@import "./projects/index.scss";
+
+// Certificate
+@import "./certificate/index.scss";
+
+// Parking
+@import "./parking/index.scss";
+
+//Contacts section
+@import "./contacts/index.scss";
+
+// Media
+@import "./components/media";
+
+// Vendors
+@import "./vendors/slick";

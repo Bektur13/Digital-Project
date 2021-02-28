@@ -1,0 +1,140 @@
+@media screen and (max-width: 1024px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        height: 100vh;
+        width: 100vw;
+        background-color: $color-white;
+        transform: translateX(100%);
+        transition: 0.5s;
+        &.is-active {
+            transform: translateX(0);
+        }
+        &__list {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        &__item {
+            margin-top: 20px;
+            margin-left: 0;
+        }
+    }
+    .burger-menu {
+        display: flex;
+        z-index: 3;
+    }
+    .tasks__description {
+        margin-left: 10px;
+    }
+    .certificates {
+        .slick-next.slick-arrow {
+            left: 930px;
+        }
+        .slick-prev.slick-arrow {
+            left: 860px;
+        }
+    }
+    .contacts__row {
+        flex-direction: column;
+    }
+    .contact__left {
+        margin-left: 250px;
+    }
+    .contact_right {
+        margin-left: 100px;
+        margin-top: 100px;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    //Base
+    .title{
+        font-size: 24px;
+    }
+    .section__title{
+        font-size: 24px;
+    }
+    .col-7 {
+        width: 100%;
+    }
+    
+    //Header
+    .header{
+        // display: none;
+        font-size: 8px;
+    }
+    //Hero
+    .hero img{
+        width: 300px;
+    }
+    //About
+    .about {
+        &__row {
+            padding: 0 10px 0 0;
+        }
+        &__item {
+            margin: 0 0 0 10px;
+        }
+        &__description {
+            width: 300px;
+            text-align: justify;
+        }
+        &__column {
+            padding-left: 13px;
+        }
+    }
+    //Tasks
+    .tasks {
+        margin-top: 550px;
+        &__item2 {
+            margin-top: 30px;
+        }
+        &__row {
+            flex-direction: column;
+        }
+        &__number {
+            font-size: 100px;
+        }
+        &__description {
+            margin-left: 10px;
+        }
+    }
+
+    // Projects
+    .projects {
+        &__row {
+            margin: 0;
+        }
+        &__column {
+            padding: 0;
+        }
+    }
+
+    //Contact
+    .contacts {
+        &__row {
+            margin: 0;
+            flex-direction: column-reverse;
+        }
+        &__column {
+            padding: 0;
+            width: 100%;
+        } 
+    }
+    //Footer
+    .footer__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,39 @@
+.contact {
+    margin-bottom: 150px;
+    &__address {
+        margin-top: 34px;
+    }
+    &__left {
+        margin-top: 80px;
+    }
+    &__map {
+        margin-left: 25px;
+        width: 110%;
+        height: 520px;
+    }
+    &__text {
+        @include font(18px,700); 
+    }
+    &__number {
+        @include font(18px,700);
+        margin: 43px 0 52px 0;
+    }
+    &__link {
+		margin-top: 30px;
+		background-color: $color-black;
+		color: $color-white;
+		path {
+			fill: $color-white;
+		}
+		&:hover {
+			color: $color-black;
+			&::before,
+			&::after {
+				background-color: $color-white;
+			}
+			path {
+				fill: $color-black;
+			}
+		}
+	}
+}
