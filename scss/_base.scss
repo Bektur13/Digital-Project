@@ -75,7 +75,6 @@ img {
 .col-12 {
 	width: 100%;
 }
-
 .title {
 	@include font(64px, 700, 1, uppercase);
 	max-width: 400px;
@@ -89,4 +88,9 @@ img {
 .section__title {
 	@include font(64px,300);
 	color:$color-gray;
+}
+@media screen and (max-width:375px) {
+	.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12 {
+		width: 100%;
+	}
 }
