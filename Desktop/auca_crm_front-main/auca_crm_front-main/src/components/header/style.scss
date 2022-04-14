@@ -1,0 +1,30 @@
+@import "../global";
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  padding: 20px 24px;
+  font-family: sans-serif;
+  background-color: #1f3058;
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    height: 50px;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+  }
+  &__item {
+    margin-left: 20px;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
